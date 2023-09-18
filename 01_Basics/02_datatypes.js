@@ -13,5 +13,5 @@ let login = true;
 
 
 // object
-
-console.log(typeof "Sid");
+console.log(typeof null); //object
+console.log(typeof undefined); // undefined
