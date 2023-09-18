@@ -1,6 +1,7 @@
 let name = "Siddhi";
 let age = 25;
 let login = true;
+let score = 33;
 
 // number => 2 to power 53
 // bigint 
