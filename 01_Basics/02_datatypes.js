@@ -16,3 +16,24 @@ let score = 33;
 // object
 console.log(typeof null); //object
 console.log(typeof undefined); // undefined
+
+
+
+//  DATA TYPES IN JAVASCRIPT
+
+/*
+PRIMITIVE TYPE (CALL BY VALUE):
+- Number - number
+- String - string 
+- Boolean - boolean
+- Null - object
+- Undefined - undefined
+- Symbol - symbol
+- Bigint - bigint
+
+NON PRIMITIVE (Reference type):
+- Array - object
+- Object - object
+- Function - function 
+
+*/
