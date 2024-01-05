@@ -1,11 +1,11 @@
 const accountId = 122344;
 let accountEmail = "user@gmail.com";
 var accountPassword = "12345";
-accountCity = "Jaipur";
+// accountCity = "Jaipur";
 let accountState;
 
 
-// // accountId = 231131;
+// accountId = 231131;
 // accountEmail = "siddhi@gmail.com";
 // accountPassword = "56789";
  accountCity = "Kathmandu";
@@ -13,6 +13,7 @@ let accountState;
 // console.log(accountP);
 
 console.table([accountId, accountEmail, accountPassword, accountCity,accountState]);
+ 
 
 /*
     NOTE - Prefer not t use 'var'
