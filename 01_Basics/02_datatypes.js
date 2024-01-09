@@ -3,6 +3,7 @@ let age = 25;
 let login = true;
 let score = 33;
 
+//PRIMITIVES (Call by Value)
 // number => 2 to power 53
 // bigint 
 // string => ""
@@ -12,7 +13,8 @@ let score = 33;
 // symbol => unique
 
 
-
+//NON-PRIMITIVES(Call by Reference)
+// Arrays
 // object
 console.log(typeof null); //object
 console.log(typeof undefined); // undefined
