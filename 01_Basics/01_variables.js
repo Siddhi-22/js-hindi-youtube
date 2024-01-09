@@ -39,3 +39,4 @@ console.log(GameName.substring(1,3));
 console.log(Name.trim()); //remover white spaces and line terminators
 console.log(url.replace("20%", "@"));
 console.log(url.includes("goog"));
+console.log(ur)
