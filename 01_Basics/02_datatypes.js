@@ -14,6 +14,7 @@ let score = 33;
 
 
 //NON-PRIMITIVES(Call by Reference)
+// Functions
 // Arrays
 // object
 console.log(typeof null); //object
