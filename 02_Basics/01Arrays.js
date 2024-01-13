@@ -1,8 +1,8 @@
 
-const arr = [1,2,4,5];
-const Hero = new Array('Superman', 'Thorfinn', 'Naruto', 'Shaktiman', 'Batman');
+// const arr = [1,2,4,5];
+// const Hero = new Array('Superman', 'Thorfinn', 'Naruto', 'Shaktiman', 'Batman');
 
-const numberz = [0, 1, 2, 3, 4, 5, 6];
+// const numberz = [0, 1, 2, 3, 4, 5, 6];
 
 // any copy operations in array creates shallow copy(Heap(Reference)).
 // Deep copy(Stack(Value))
@@ -53,4 +53,17 @@ const val = [1, 2, 3, 4, 5, 6, 7, 8];
 //console.log(val.splice(0, 2, 'Jan')); // if [deleteCount > start] here start is excluded and deleteCount is included elements in-between  are deleted, and item given are added.
 //console.log(val.splice(2, 2, 'Jan')); // if [deleteCount = start] then all the element including start will be deleted, and item will be pushed.
 
-console.log(val); 
+//console.log(val); 
+
+
+
+const marvelHero = ["Spiderman", "Ironman", "Thor", "Strange"];
+const dcHero = ["superman", "batman", "flash"];
+
+// marvelHero.push(dcHero); //takes the dcHero(array) as one single element.
+// console.log(marvelHero);
+
+// console.log(marvelHero[4][1]);
+
+marvelHero.concat(dcHero);
+console.log(marvelHero);
