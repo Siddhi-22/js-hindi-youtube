@@ -1,11 +1,11 @@
- console.log("2" > 1);
+ console.log("2" > 1); //true
 // console.log(1 <= 2);
 // console.log(2 != 3);
 // console.log(1 == 3);
 
 
-// console.log("2" == 2);
-// console.log(1 == "3");
+console.log("2" == 2); //true
+console.log(1 == "3"); //false
 
 /* 
 console.log(null > 0);
