@@ -11,14 +11,38 @@ function sumOf2(number1, number2){
 // console.log(result); // unddefined - coz here function does not return anything
 
 
+
+
 function sub(num1, num2){
     //result = num1 - num2;
     //return result;
     return num1 - num2;
 }
 const result1 = sub(4,3);
-console.log("result: ",result1); // unddefined - coz here function does not return anything
+//console.log("result: ",result1); // undefined - coz here function does not return anything
 
+
+
+
+/* function loginUserMsg(user){
+    if (user === undefined) {
+        console.log(`Please enter a name`);
+        return;
+    }
+    return(`${user} just logged in...`);
+} */
+
+//similarly we know if(true) -> then{execute} (undefined is by-default false so "!" is used)
+function loginUserMsg(user = "Dubey"){
+    if (!undefined) {
+        console.log(`Please enter a name`);
+        return;
+    }
+    return(`${user} just logged in...`);
+}
+//console.log(loginUserMsg("Shashtri")); // Shashtri just logged in
+//console.log(loginUserMsg("")); // just logged in
+console.log(loginUserMsg()); // undefined just logged in
 
 /*
 for (let i = 0;  i < 5; i++) {
