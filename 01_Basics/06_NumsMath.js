@@ -25,9 +25,9 @@ console.log(Math.floor(5.3));
 console.log(Math.sqrt(121)); */
 
 console.log(Math.random()); // (0-1)
-console.log(Math.floor((Math.random() * 10) + 1));//(1 - 9)
+console.log(Math.floor((Math.random() * 10) + 1));//(1 - 10)
 
-const min = 10;
-const max = 20;
-console.log(Math.floor(Math.random()*(max - min + 1)) + min);
-console.log((Math.PI).toFixed(3));
+// const min = 10;
+// const max = 20;
+// console.log(Math.floor(Math.random()*(max - min + 1)) + min);
+// console.log((Math.PI).toFixed(3));
