@@ -13,7 +13,6 @@ switch (months) {
         break;
     case 4:
         console.log("Apr");
-        break;
     case 5:
         console.log("May");
         break;
@@ -27,7 +26,8 @@ switch (months) {
 }
 
 
-const sign = "Libra";
+
+/* const sign = "Libra";
 
 switch (sign) {
     case "Gemini":
@@ -44,6 +44,6 @@ switch (sign) {
         console.log("What is your sign?");
         break;
 }
-
+ */
 // the break make sure no further casees are checked.
 // as wherever the key matches all the further writen code is executed except default. So break needs to be added.
