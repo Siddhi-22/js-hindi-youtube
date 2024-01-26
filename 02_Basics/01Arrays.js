@@ -45,7 +45,7 @@ console.log(Hero); */
 //deleteCount - an integer indicating the number of element in array to remove from start.
 
 const val = [1, 2, 3, 4, 5, 6, 7, 8];
-//val.splice(-9, 0); //If [start < -(array.length)] then 0 is used as starting point and delete until given deleteCount.
+console.log(val.splice(-9, -4)); //If [start < -(array.length)] then 0 is used as starting point and delete until given deleteCount.
 // console.log(val.splice(4, 3, 'jan', 'sep', 'oct', 'nov', 'dec')); // If [start >= array.length] then given items will be added from start point(deletion performed on(3 elements from 4 index)).
 //val.splice(); //Here nothing is deleted.
 
