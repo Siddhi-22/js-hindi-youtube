@@ -21,12 +21,13 @@ for (const key in programming) {
 };
 
 
-/* 
+
 const map1  = new Map();
 map1.set('01', "Osama");
 map1.set('02', "Obama");
 map1.set('03', "Okana");
 
 for (const key in map1) {
-    console.log(map1[key]); // No output coz Maps are not itterable.
-} */
+    //console.log(map1[key]); // No output coz Maps(here the initialization is of singleton type so).
+    console.log(key);
+} 
