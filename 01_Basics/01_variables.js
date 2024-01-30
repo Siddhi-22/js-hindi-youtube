@@ -16,7 +16,7 @@ let accountState;
  
 
 /*
-    NOTE - Prefer not t use 'var'
+    NOTE - Prefer not to use 'var'
            because  of issues in block and function scope  
 */
 
