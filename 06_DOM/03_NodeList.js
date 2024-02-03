@@ -13,7 +13,8 @@
 
 // // OR OR OR
 
-// const text = document.createTextNode("Learn JS");
+
+// const text = document.createTextNode("Learn JS"); // this is prferred just due to optimization
 // h1.appendChild(text);
 
 
@@ -24,19 +25,30 @@
 const rang = ['red', 'yellow', 'orange', 'blue', 'green', 'pink'];
 
 
-function createH1 (col, id, classes, greet) {
+function createH1 (id, classes, greet) {
 
-    const div = document.createElement('div');
-    console.log(div);
+    for (let i = 0; i < rang.length; i++) {
+        
+        const div = document.createElement('div');
+        div.id = id;
+        div.className = classes;
+        div.innerText = greet;
+        div.style.backgroundColor = rang[i];
+    }
 
-    div.id = id;
-    div.className = classes;
-    div.style.backgroundColor = col;
-    const text = document.createTextNode(greet);
-    div.appendChild(text);
+    //createH1("myId", "head", "hello World");
+
+    // const div = document.createElement('div');
+    // console.log(div);
+
+    // div.id = id;
+    // div.className = classes;
+    // div.style.backgroundColor = col;
+    // const text = document.createTextNode(greet);
+    // div.appendChild(text);
 
 
-    document.body.appendChild(div);
+    // document.body.appendChild(div);
 };
 
-createH1("green", "myId", "head", "Hii, how are you?")
+createH1("myId", "head", "Hii, how are you?")
