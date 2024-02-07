@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    
+    <h2>Amazing images</h2>
+    <div>
+        <ul id="images">
+            <li><img width="300px" id="mountain" src="https://www.pexels.com/photo/postal-altiplano-chileno-20116318/" alt="" /></li>
+            <li><img width="300px" id="shop" src="https://www.pexels.com/photo/facade-of-an-illuminated-temple-in-taiwan-19776564/" alt="" /></li>
+            <li><img width="300px" id="person" src="https://www.pexels.com/photo/person-wearing-straw-hat-standing-in-front-of-forest-entrance-13661141/" alt="" /></li>
+            <li><img width="300px" id="lighthouse" src="https://www.pexels.com/photo/green-and-blue-sky-with-stars-5724188/" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+        <script>
+            // type, timeStamp, defaultPrevent, 
+            // target, toElement, srcElement, currentElement
+            //clientX, clientY, screeenX, screenY
+            //altkey, ctrlkey, shiftkey, keyCode
+
+            document.getElementById('person').addEventListener('click', function(e){
+                alert('Person clicked..');
+                console.log(e);
+            }, false);
+
+
+        </script>
+    </div>
+
+</body>
+</html>
