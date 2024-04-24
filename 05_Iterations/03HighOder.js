@@ -6,7 +6,7 @@
 
 const doc = [1, 2, 3, 4, 5];
 for (const i of doc) {
-    //console.log(i);
+    // console.log(i);
 };
  const taaruf = "Jain Ganga";
 
@@ -30,7 +30,7 @@ for (const i of doc) {
  //console.log(map);
 
  for (const [key, value] of map) {
-     console.log(key, ':-', value);
+    console.log(key, ':-', value);
  }
 
 
@@ -42,4 +42,9 @@ for (const i of doc) {
 
   for (const key of myObj) {
     console.log(key);
- } */ // Object is not itterable like this
+} 
+*/ 
+ 
+ 
+//Maps are itterable through for-of.
+//Objects are not itterable through for-of.

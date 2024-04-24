@@ -33,7 +33,7 @@ if (true) {
 
     if (username === "Chandini ") {
         const web = " Youtube";
-        console.log(username + web);
+        //console.log(username + web);
     };
     //console.log(web); (out of scope) error = web not defined.
 }
@@ -51,8 +51,10 @@ function addOne(num){
     return num + 1;
 }
 
-addTwo(); //error - cannot use before declare as the function is stored in a variable itself.(Hoisting)
+//addTwo(); //error - cannot use before declare as the function is stored in a variable itself.(Hoisting)
 
 const addTwo = function(num){
     return num + 2;
 }
+
+console.log(addTwo(5));

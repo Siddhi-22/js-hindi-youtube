@@ -38,7 +38,7 @@ const eww = () => {
 
 //--------------------------------------------------------
 
-/* // Explicit return
+/* // Explicit return - manually we need to write return keyword.
 const sum = (num1, num2) => {
     return num1 + num2;
 }

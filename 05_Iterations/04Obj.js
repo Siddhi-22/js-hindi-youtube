@@ -6,9 +6,9 @@ const meraObj = {
 };
 
 for (const key in meraObj) {
-    //console.log(key);
-    //console.log(meraObj[key]);
-    //console.log(`${key} stands for ${meraObj[key]}`);
+    // console.log(key);
+    // console.log(meraObj[key]);
+    // console.log(`${key} stands for ${meraObj[key]}`);
 };
 
 
@@ -29,5 +29,6 @@ map1.set('03', "Okana");
 
 for (const key in map1) {
     //console.log(map1[key]); // No output coz Maps(here the initialization is of singleton type so).
-    console.log(key);
+    //console.log(key);
 } 
+//Maps are not itterable so for-in won't work.

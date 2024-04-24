@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+</head>
+<body>
+
+    <h1>New Projects</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+    <script>
+
+       
+        let change;
+        const start = () => {
+            const startNow = () =>{
+                console.log("Ni Hao");
+            };
+            change = setInterval(startNow, 2000);
+        };
+        
+        const restart = document.querySelector('#start').addEventListener("click",start);
+
+        const clear = () => {
+            clearInterval(change);
+        }; 
+        const stop = document.querySelector("#stop").addEventListener("click", clear);
+        
+
+
+    </script>
+</html>
