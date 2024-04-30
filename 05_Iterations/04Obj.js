@@ -16,8 +16,8 @@ for (const key in meraObj) {
 const programming = ["C", "C++", "Java", "JavaScript", "React", "Python"];
 
 for (const key in programming) {
-   //console.log(key); // 0 1 2 3 4 5 (that is array's keys)
-   //console.log(programming[key]); // C, C++ ...
+//    console.log(key); // 0 1 2 3 4 5 (that is array's keys)
+   console.log(programming[key]); // C, C++ ...
 };
 
 

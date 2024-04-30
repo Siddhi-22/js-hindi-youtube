@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Javascript Hindi Me..</h1>
+    <button id="stop">STOP</button>
+    
+    <script>
+    
+        // setTimeout(() => {
+        //     console.log("Siddhi learn Js")}
+        //     , 2000);
+
+        // const sayName = () =>{
+        //     console.log("Siddhi on Youtube..");
+        // }
+        // setTimeout(sayName, 3000);
+
+        const cngTxt = () => {
+            document.querySelector('h1').innerHTML = "Learning JavaScript";
+        }
+        const named = setTimeout(cngTxt, 3000);
+
+        document.querySelector("#stop").addEventListener('click', () => {
+            clearTimeout(named);
+            console.log("Stopped..")
+        });
+    </script>
+</body>
+</html>

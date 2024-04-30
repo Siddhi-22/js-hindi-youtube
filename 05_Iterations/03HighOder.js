@@ -6,7 +6,7 @@
 
 const doc = [1, 2, 3, 4, 5];
 for (const i of doc) {
-    // console.log(i);
+    console.log(i);
 };
  const taaruf = "Jain Ganga";
 
@@ -19,7 +19,7 @@ for (const i of doc) {
 
 
  //Maps
- // all the values are unique if duolicate value added
+ // all the values are unique if duplicate value added
 
  const map = new Map();
  map.set('IN', "INDIA");
@@ -30,20 +30,20 @@ for (const i of doc) {
  //console.log(map);
 
  for (const [key, value] of map) {
-    console.log(key, ':-', value);
+    // console.log(key, ':-', value);
  }
 
 
- /*
- const myObj = new Object();
- myObj.id = "001";
- myObj.game = "COC";
+ 
+//  const myObj = new Object();
+//  myObj.id = "001";
+//  myObj.game = "COC";
 
 
-  for (const key of myObj) {
-    console.log(key);
-} 
-*/ 
+//   for (const key of myObj) {
+//     console.log(key);
+// } 
+ 
  
  
 //Maps are itterable through for-of.

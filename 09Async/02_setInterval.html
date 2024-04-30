@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Javascript Hindi Me..</h1>
+    <button id="stop">STOP</button>
+
+    <script>
+
+         
+        // setInterval(() => {
+        //     console.log("Siddhi..",Date.now())
+        // },2000);
+
+        // const printNaam = () => {
+        //     console.log("Siddhi..",Date.now());
+        // }
+        // setInterval(printNaam, 5000); //prints repeatedly after a given time;
+
+        const printNaam = () => {
+             console.log("Siddhi..",Date.now());
+        }
+        const intId = setInterval(printNaam, 5000);
+        clearInterval(intId); // removes all the things 
+    </script>
+</body>
+</html>

@@ -14,9 +14,9 @@ const programming = ["C", "C++", "Java", "JavaScript", "React", "Python"];
 // programming.forEach(doit);
 
 const doagain = (part) => {
-    //console.log(part);
+    // console.log(part);
 };
-//programming.forEach(doagain);
+// programming.forEach(doagain);
 
 programming.forEach((item, index, arr) => {
     // console.log(item, index, arr);
@@ -43,4 +43,4 @@ languages.forEach( (item) => {
     console.log(item.lanName);
 })
 
-
+//for-each doesn't return anything 
