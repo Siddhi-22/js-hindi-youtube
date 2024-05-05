@@ -6,8 +6,7 @@ const zyaada = num.map((num) => {
 
 //console.log(zyaada);
 
-
-/* 
+ 
 // using forEach
 
 const newNums = [];
@@ -15,7 +14,7 @@ num.forEach((numero) => {
     newNums.push(numero + 10);
 });
 
-console.log(newNums); */
+console.log(newNums); 
 
 
 // Chaining in map
@@ -34,4 +33,4 @@ const val = num.map((num) => num * 10)
             .map((num) => num + 1)
             .filter((num) => num > 30);
 
-console.log(val);
+//console.log(val);

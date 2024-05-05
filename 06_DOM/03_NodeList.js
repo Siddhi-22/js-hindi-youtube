@@ -3,7 +3,7 @@
 
 // h1.id = Math.round(Math.random() * 10 + 1);
 // h1.className = "heading";
-// h1.setAttribute('title', 'myType');
+// h1.setAttribute('title', 'myType'); //preffered as all the rest (like .id, .className..etc) overwrites the values but setAttribute doesn't. (Optimized)
 // h1.style.backgroundColor = 'yellow';
 // h1.style.padding = '10px';
 
