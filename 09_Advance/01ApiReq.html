@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121; color: white;">
+    0	UNSENT	Client has been created. open() not called yet.</br>
+    1	OPENED	open() has been called.</br>
+    2	HEADERS_RECEIVED	send() has been called, and headers and status are available.</br>
+    3	LOADING	Downloading; responseText holds partial data.</br>
+    4	DONE	The operation is complete.</br>
+
+    <div class="card">
+        <img src="" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>John Doe</b></h4>
+          <p>Architect & Engineer</p>
+        </div>
+      </div>
+
+    <div>
+        <button id="btn">
+            Get Data
+        </button>
+    </div>
+</body>
+
+<script>
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+    const xhr = new XMLHttpRequest();
+    xhr.open("GET", requestUrl);
+
+    let data;
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        
+        if (xhr.readyState === 4) {
+            data = JSON.parse(this.responseText);
+
+            console.log(typeof data);
+            console.log(data);
+            console.log(data.followers);
+        }
+    }
+    
+    function extractData(){
+        const image = document.getElementsByTagName("img")[0].innerText = data.avatar_url;
+        const naam = document.getElementsByTagName("h4").innerHTML = data.name;
+        const follower = document.getElementsByTagName("p").innerText = data.followers;
+        
+        const card = document.querySelector(".card");
+        card.append(image);
+        card.append(naam);
+        card.append(follower);
+    
+    };
+    const btn = document.querySelector("#btn").addEventListener("click", extractData);
+    
+    xhr.send();
+</script>
+</html>
