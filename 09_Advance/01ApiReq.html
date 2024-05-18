@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        
+        .card {
+        /* Add shadows to create the "card" effect */
+        width: 500px;
+        height: 600px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+      }
+    .container {
+        padding: 2px 16px;
+      }
+    </style>
 </head>
 <body style="background-color: #212121; color: white;">
     0	UNSENT	Client has been created. open() not called yet.</br>
@@ -15,7 +29,7 @@
     <div class="card">
         <img src="" alt="Avatar" style="width:100%">
         <div class="container">
-          <h4><b>John Doe</b></h4>
+          <h4>John Doe</h4>
           <p>Architect & Engineer</p>
         </div>
       </div>
@@ -46,14 +60,10 @@
     }
     
     function extractData(){
-        const image = document.getElementsByTagName("img")[0].innerText = data.avatar_url;
-        const naam = document.getElementsByTagName("h4").innerHTML = data.name;
-        const follower = document.getElementsByTagName("p").innerText = data.followers;
+        const image = document.querySelector(".card img").setAttribute("src", `${data.avatar_url}`);
+        const naam = document.querySelector("h4").innerHTML = `${data.name}`;
+        const follower = document.querySelector("p").innerHTML = `${data.followers}`;
         
-        const card = document.querySelector(".card");
-        card.append(image);
-        card.append(naam);
-        card.append(follower);
     
     };
     const btn = document.querySelector("#btn").addEventListener("click", extractData);
