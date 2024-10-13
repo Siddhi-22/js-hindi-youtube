@@ -1,52 +1,52 @@
-// const PromiseOne = new Promise((resolve, reject) => {
+const PromiseOne = new Promise((resolve, reject) => {
 
-//     setTimeout(() => {
-//         console.log("Async 1 task completed");
-//         resolve();
-//     }, 1000);
-// })
+    setTimeout(() => {
+        console.log("Async 1 task completed");
+        resolve();
+    }, 1000);
+})
 
-// PromiseOne.then(() => {
-//     console.log("PromiseOne is Resolved");
-// });
-
-
-
-// new Promise((resolve, reject) => {
-//     setTimeout(() => {
-//         console.log("Async 2 task comleted ");
-//         resolve({name: "Phool", gaon: "SurajMukhi"});
-//     },2000);
-// }).then((dost) => {
-//     console.log(dost);
-//     return dost;
-// }).then((user) => {
-//     console.log(user.name);
-// });
+PromiseOne.then(() => {
+    console.log("PromiseOne is Resolved");
+});
 
 
 
-// const PromiseThree = new Promise((resolve, reject)=>{
-//     setTimeout(() => {
+new Promise((resolve, reject) => {
+    setTimeout(() => {
+        console.log("Async 2 task comleted ");
+        resolve({name: "Phool", gaon: "SurajMukhi"});
+    },2000);
+}).then((dost) => {
+    console.log(dost);
+    return dost;
+}).then((user) => {
+    console.log(user.name);
+});
 
-//         const value = false;
-//         if(value){
-//             console.log("Async task 3 completed");
-//             resolve();
-//         }else{
-//             console.log("Error: Somthing went Wrong");
-//             reject();
-//         }
-//     })
-// })
 
-// PromiseThree.then(() => {
-//     console.log("Promise 3 resolved..");
-// }).catch(() => {
-//     console.log("Promise 3 rejected");
-// }).finally(() => {
-//     console.log("Promise resolved or rejected");
-// });
+
+const PromiseThree = new Promise((resolve, reject)=>{
+    setTimeout(() => {
+
+        const value = false;
+        if(value){
+            console.log("Async task 3 completed");
+            resolve();
+        }else{
+            console.log("Error: Somthing went Wrong");
+            reject();
+        }
+    })
+})
+
+PromiseThree.then(() => {
+    console.log("Promise 3 resolved..");
+}).catch(() => {
+    console.log("Promise 3 rejected");
+}).finally(() => {
+    console.log("Promise resolved or rejected");
+});
 
 
 

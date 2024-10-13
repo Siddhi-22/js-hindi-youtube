@@ -28,15 +28,20 @@ const GameName = new String("Veton");
 const Name = new String("   Carolene");
 const url = "https://google20%.com/Siffa";
 
-console.log(`Hello ${GameName} welcome to the Game!!`);
-console.log(GameName.length);
-console.log(GameName.toUpperCase());
-console.log(GameName.charAt(3));
-console.log(GameName.indexOf('t'));
-console.log(GameName.split('t'));
-console.log(GameName.slice(-2, 2));
-console.log(GameName.substring(1,3)); 
-console.log(Name.trim()); //remover white spaces and line terminators
+// console.log(`Hello ${GameName} welcome to the Game!!`);
+// console.log(GameName.length);
+// console.log(GameName.toUpperCase());
+// console.log(GameName.charAt(3));
+// console.log(GameName.indexOf('t'));
+// console.log(GameName.split('t'));
+// console.log(GameName.slice(-3, 0));
+// console.log(GameName.substring(1,3)); 
+// console.log(Name.trim()); //remover white spaces and line terminators
 console.log(url.replace("20%", "@"));
 console.log(url.includes("goog"));
-console.log(ur)
+// // console.log(ur)
+
+const stri = "2 + 2";
+// const stri1 = new String("2 + 2")
+// console.log(eval(stri1));
+

@@ -45,7 +45,7 @@ if (true) {
 //---------------------------------IMP------------------------------------
 
 
-addOne(); // here no problem
+// addOne(); // here no problem
 
 function addOne(num){
     return num + 1;
@@ -57,4 +57,19 @@ const addTwo = function(num){
     return num + 2;
 }
 
-console.log(addTwo(5));
+// console.log(addTwo(5));
+
+// Closure:
+
+function out(outerVariable) {
+    return function inn(innerVariable) {
+        console.log('Outer Variable:', outerVariable);
+        console.log('Inner Variable:', innerVariable);
+    };
+}
+
+// const newFunction = out('outside');
+// newFunction('inside');
+
+const inn = out('outside');
+inn('andarr');

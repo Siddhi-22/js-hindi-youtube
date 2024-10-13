@@ -4,14 +4,14 @@ const element = document.getElementById('title');
 
 const changed = document.getElementsByClassName('heading');
 //changed.style.backgroundColor = 'yellow'; // doesn't work becoz it returns a HTMLCollection, which doesnot have style.
-//console.log(changed);
+// console.log(changed);
 
 const change = document.getElementById('title').getAttribute('class');
-//console.log(change);
+//  console.log(change);
 
-const changes = document.getElementsById('title').setAttribute('class', 'test');
-console.log(changes);
-
+const changes = document.getElementById('title').setAttribute('class', 'test heading');
+// console.log(changes);
+// console.log(document.getElementById("title").getAttribute('class'));
 
 //NOTES
 

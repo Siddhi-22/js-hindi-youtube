@@ -7,7 +7,9 @@ const mySym = Symbol("key1");
 const user1 = {
     name: "Julie",
     "fullName": "Julie Desouza",
-    [mySym]: "mykey1", //to define symbol use[]
+    [mySym]: "mykey1", //to define symbol use[]; Symbols are used mainly in js 
+                       // object to create unique immutable identifires.
+                       // To prevent property name conflicts and to make object iterable.  
     age: 20,
     location: "India",
     email: "user1@gmail.com",
@@ -56,6 +58,7 @@ const regUser = {
     }} 
 }
 // console.log(regUser.name.fullname);
+
 
 //Merge Objects
 
