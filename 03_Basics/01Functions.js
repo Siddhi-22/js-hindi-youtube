@@ -8,7 +8,7 @@ function sumOf2(number1, number2){
 // sumOf2(3, null); // 3
 
 // const result = sumOf2(4,3);
-// console.log(result); // unddefined - coz here function does not return anything
+// console.log(result); // undefined - coz here function does not return anything
 
 
 
