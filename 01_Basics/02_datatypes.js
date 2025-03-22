@@ -17,5 +17,21 @@ let score = 33;
 // Functions
 // Arrays
 // object
-console.log(typeof null); //object
-console.log(typeof undefined); // undefined
+
+
+
+// console.log(typeof null); //object
+// console.log(typeof undefined); // undefined
+
+
+
+//interview
+var a = 200;
+{
+    let a  = 400;
+}
+let b = a;
+{
+    let b = -40;
+}
+console.log(b);

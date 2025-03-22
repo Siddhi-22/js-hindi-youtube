@@ -44,6 +44,12 @@ console.log(Hero); */
 //start - zero based index at which to start changing the array.
 //deleteCount - an integer indicating the number of element in array to remove from start.
 
+//START
+// if -array.length <= start < 0, start + array.length.
+//If start < -array.length, 0 is used
+//If start >= array.length
+
+
 const val = [1, 2, 3, 4, 5, 6, 7, 8];
 console.log(val.splice(-9, -4)); //If [start < -(array.length)] then 0 is used as starting point and delete until given deleteCount.
 // console.log(val.splice(4, 3, 'jan', 'sep', 'oct', 'nov', 'dec')); // If [start >= array.length] then given items will be added from start point(deletion performed on(3 elements from 4 index)).
@@ -76,12 +82,67 @@ const dcHero = ["superman", "batman", "flash"];
 // console.log(realnums);
 
 
-console.log(Array.isArray("John Doe")); // if given is array or not
-console.log(Array.from("John Doe")); //coverts to array
-console.log(Array.from({name: "Doe"})); // here gives [] empty array coz not specified over what the array is to be created(key, value).
+// console.log(Array.isArray("John Doe")); // if given is array or not
+// console.log(Array.from("John Doe")); //coverts to array
+// console.log(Array.from({name: "Doe"})); // here gives [] empty array coz not specified over what the array is to be created(key, value).
 
 
-const val1 = 100;
-const val2 = 500;
-const val3 = 900;
-console.log(Array.of(val1,val2, val3)); //this can also be used to cover to array 
+// const val1 = 100;
+// const val2 = 500;
+// const val3 = 900;
+// console.log(Array.of(val1,val2, val3)); //this can also be used to cover to array 
+
+
+//interview
+
+// let arr1 = "John";
+// let arr2 = "Smith";
+// let len = Math.max(arr1.length, arr2.length);
+// let merged;
+// for(let i = 0; i < len; i++){
+//     if(i < arr1.length) merged += arr1[i];;
+//     if(i < arr2.length) merged +=arr2[i];
+//     // return 1;
+// }
+// console.log(merged);
+
+
+
+//SORT ARRAY
+
+//using selection sort
+// let a = [2, 30, 34, 11, 12];
+
+// for(let i = 0; i< a.length -1; i++){
+//     let min = i;
+    
+//     for(j = i+1; j <a.length; j++){
+//         if(a[j] < a[min]){
+//             min = j;
+//         }
+//     }
+//     [a[i], a[min]] = [a[min], a[i]];
+   
+// }
+
+// console.log(a);
+
+
+//using bubble sort
+
+// let a = [12, 34, 22, 10, 1];
+
+// for(let i = 0; i<a.length; i++){
+//     for(j = 0; j< a.length -1 -i; j++){
+//         if(a[j]> a[j+1]){
+//             [a[j], a[j+1]] = [a[j+1], a[j]];
+//         }
+//     }
+// }
+// console.log(a);
+
+
+
+
+//using insertion sort
+ 
