@@ -11,7 +11,7 @@ else{
 // strings, [], "0", "false", {}, function(){},
 
 // Falsy value:
-// false, 0, -0, BigInt 0n, null, undefined, NaN
+// false, 0, -0, BigInt 0n, null, undefined, NaN, ""
 
 // any string value is considered true; this is called truthy value
 

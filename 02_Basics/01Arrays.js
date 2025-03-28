@@ -160,16 +160,13 @@ let fruits = ["Apple", "Banana", "Cherry"];
 
 
 const marvelHero = ["Spiderman", "Ironman", "Thor", "Strange"];
-const dcHero = ["superman", "batman", "flash"];
-
-
+const dcHero = ["superman", "batman", "flash"]; 
 
 // marvelHero.push(dcHero); //takes the dcHero(array) as one single element.(Changes the existing array )
 // console.log(marvelHero);
-
 // console.log(marvelHero[4][1]);
 
-// const allHero = marvelHero.concat(dcHero); //gives a new array
+// const allHero = marvelHero.concat(dcHero); //merges two arrays & gives a new array
 // console.log(allHero);
 
 // const allHero1 = [...marvelHero, ...dcHero]; //Spread operator breaks the array elements into pieces.
@@ -199,6 +196,7 @@ const dcHero = ["superman", "batman", "flash"];
 
 
 //✅interview
+//------------------------------------------
 
 // let arr1 = "John";
 // let arr2 = "Smith";

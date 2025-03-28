@@ -15,6 +15,7 @@ function objHandle(anyObj){
     console.log(`Username is ${anyObj.name} and price is ${anyObj.price}`);
 };
 console.log(objHandle(user));
+
 objHandle({
     name: "Varma",
     price: 500
