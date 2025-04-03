@@ -1,9 +1,9 @@
 const programming = ["C", "C++", "Java", "JavaScript", "React", "Python"];
 
 
-// programming.forEach( (name) => {
-//     console.log(name);
-// })
+programming.forEach( (name) => {
+    // console.log(name);
+})
 
 
 

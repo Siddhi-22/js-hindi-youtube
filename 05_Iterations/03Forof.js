@@ -1,12 +1,16 @@
 // for of
 
+/*
+The for...of loop iterates over iterable objects like arrays, strings, and maps.
+*/
+
 // ["", "", ""]
 
 // [{}, {}, {}]
 
 const doc = [1, 2, 3, 4, 5];
 for (const i of doc) {
-    console.log(i);
+    // console.log(i);
 };
  const taaruf = "Jain Ganga";
 
@@ -19,7 +23,7 @@ for (const i of doc) {
 
 
  //Maps
- // all the values are unique if duplicate value added
+ // all the values are unique no duplicate value added
 
  const map = new Map();
  map.set('IN', "INDIA");
@@ -27,7 +31,7 @@ for (const i of doc) {
  map.set('Fr', "France");
  map.set('IN', "INDIA");
 
- //console.log(map);
+//  console.log(map);
 
  for (const [key, value] of map) {
     // console.log(key, ':-', value);
@@ -46,5 +50,5 @@ for (const i of doc) {
  
  
  
-//Maps are itterable through for-of.
+//Maps, Arrays, Strings are itterable through for-of.
 //Objects are not itterable through for-of.

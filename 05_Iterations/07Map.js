@@ -1,3 +1,7 @@
+//The map() method creates a new array by applying a function to each element
+//🔹 Use Case: When you need a transformed version of the array
+
+
 const num = [1,2,3,4,5,6,7,8,9];
 
 const zyaada = num.map((num) => {
