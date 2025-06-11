@@ -24,21 +24,69 @@
 // }, false);
 
 
-document.querySelector('#images').addEventListener('click', (e) => {
-    console.log(e.target.parentNode);
+// document.querySelector('#images').addEventListener('click', (e) => {
+//     console.log(e.target.parentNode);
 
-    if (e.target.tagName === 'IMG') {
-        let removeIt = e.target.parentNode;
-        removeIt.remove();
-        removeIt.parentNode.removeChild(removeIt);
-    }
-}, false)
+//     if (e.target.tagName === 'IMG') {
+//         let removeIt = e.target.parentNode;
+//         removeIt.remove();
+//         removeIt.parentNode.removeChild(removeIt);
+//     }
+// }, false)
+
+
+
+document.querySelector('#images').addEventListener('click', (e) => {
+  console.log("Clicked on Ul");
+
+  
+},{once:true}); // this will remove the event listener after first click
+//{passive:true} // this will not allow preventDefault() to be called
+
+// Create the custom event
+const myEvent = new CustomEvent("userLoggedIn", {
+  detail: { username: "Sweety",
+    age: 25,
+    email: "sweety.101@gmail.com"
+   }
+});
+
+// Listen for it
+document.addEventListener("userLoggedIn", function(e) {
+  console.log("Welcome, " + e.detail.age);
+});
+
+// Dispatch the event
+document.dispatchEvent(myEvent);
+
+
+
+
+
+
+
+
+
+
 
 
 
 //NOTES
 //----------- (read about this)
 // type, timeStamp, preventDefault, 
-// target, toElement, srcElement, currentTarget
+// target, (toElement, srcElement (old IE)), currentTarget
 //clientX, clientY, screeenX, screenY
-//altkey, ctrlkey, shiftkey, keyCode
+//altkey, ctrlkey, shiftkey, (keyCode (depricated)instead e.key or e.code) 
+
+
+
+// Option	  Description
+//---------------------------------------
+// once	      Fires only once
+// capture	  Use capture phase
+// passive	  Indicates the function won't call preventDefault()
+
+
+
+
+

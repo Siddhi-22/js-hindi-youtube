@@ -8,25 +8,28 @@
 <body>
     
     <h1>Javascript Hindi Me..</h1>
+    <button id="start">START</button>
     <button id="stop">STOP</button>
 
     <script>
 
-         
-        // setInterval(() => {
-        //     console.log("Siddhi..",Date.now())
-        // },2000);
+        let intId;
+        let printName = () => {
+            const change = () => {
+                console.log("Siddhi on Youtube..");
+            };
 
-        // const printNaam = () => {
-        //     console.log("Siddhi..",Date.now());
-        // }
-        // setInterval(printNaam, 5000); //prints repeatedly after a given time;
+            if(!intId){
+            intId = setInterval(change, 2000);
+        }};
+        document.getElementById("start").addEventListener("click", printName);
 
-        const printNaam = () => {
-             console.log("Siddhi..",Date.now());
-        }
-        const intId = setInterval(printNaam, 5000);
-        clearInterval(intId); // removes all the things 
+        document.getElementById("stop").addEventListener("click", () => {
+            clearInterval(intId);
+            console.log("Stopped..");
+            intId = null;
+            
+        })
     </script>
 </body>
 </html>

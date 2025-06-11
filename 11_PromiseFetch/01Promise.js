@@ -14,7 +14,7 @@ PromiseOne.then(() => {
 
 new Promise((resolve, reject) => {
     setTimeout(() => {
-        console.log("Async 2 task comleted ");
+        console.log("Async 2 task completed ");
         resolve({name: "Phool", gaon: "SurajMukhi"});
     },2000);
 }).then((dost) => {

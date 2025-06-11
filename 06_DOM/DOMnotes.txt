@@ -1,0 +1,104 @@
+🔍 SELECTING ELEMENTS
+Syntax	Description
+document.getElementById("id")	Select by ID
+document.getElementsByClassName("class")	Select by class name (HTMLCollection)
+document.getElementsByTagName("tag")	Select by tag (HTMLCollection)
+document.querySelector("selector")	Select first match (CSS-style selector)
+document.querySelectorAll("selector")	Select all matches (NodeList)
+
+
+
+🎨 MANIPULATING CONTENT
+Task	Code
+Get text	element.textContent
+Set text	element.textContent = "Hello"
+Get HTML	element.innerHTML
+Set HTML	element.innerHTML = "<b>Hi</b>"
+
+
+
+🎨 STYLING ELEMENTS
+Task	Code
+Change style	element.style.color = "blue"
+Multiple styles	element.style.cssText = "color: red; background: yellow;"
+
+
+
+⚙️ ATTRIBUTES
+Task	Code
+Get attribute	element.getAttribute("href")
+Set attribute	element.setAttribute("src", "img.png")
+Remove attribute	element.removeAttribute("disabled")
+
+
+
+🧩 CLASSLIST METHODS
+Task	Code
+Add class	element.classList.add("active")
+Remove class	element.classList.remove("hidden")
+Toggle class	element.classList.toggle("dark")
+Check class	element.classList.contains("active")
+
+
+
+
+🏗️ CREATE & INSERT ELEMENTS
+Task	Code
+Create	let el = document.createElement("div")
+Set text	el.textContent = "New div"
+Append	parent.appendChild(el)
+Insert before	parent.insertBefore(el, existingElement)
+
+
+
+
+❌ REMOVE ELEMENTS
+Task	Code
+Remove self	element.remove()
+Remove child	parent.removeChild(child)
+
+
+
+🧭 DOM TRAVERSING
+Task	Code
+Parent	element.parentNode
+Children	element.children
+First child	element.firstElementChild
+Last child	element.lastElementChild
+Next sibling	element.nextElementSibling
+Previous sibling	element.previousElementSibling
+
+
+
+
+
+🧨 EVENTS
+javascript
+Copy
+Edit
+element.addEventListener("event", function() {
+  // do something
+});
+Common Events
+click
+mouseover
+keydown
+submit
+change
+
+Example:
+
+button.addEventListener("click", () => {
+  alert("Clicked!");
+});
+
+
+
+🕒 DOMContentLoaded
+Ensure DOM is fully loaded before running JS:
+
+document.addEventListener("DOMContentLoaded", () => {
+  // safe DOM access
+});
+✅ Pro Tip:
+Use console.log(document) in the browser console to explore the whole DOM live.
