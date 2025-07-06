@@ -28,4 +28,9 @@ techerOne.addCourse();
 
 const UserOne = new user("Hitesh");
 UserOne.logMe();
-UserOne.addCourse(); // This will throw an error because addCourse is not defined in the user class
+//UserOne.addCourse(); // This will throw an error because addCourse is not defined in the user class
+
+
+console.log(techerOne === UserOne);//
+console.log(techerOne instanceof Teacher); // true
+console.log(techerOne instanceof user); // true
